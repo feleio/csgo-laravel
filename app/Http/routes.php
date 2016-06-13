@@ -11,9 +11,6 @@
 |
 */
 
-//Route::get('/', 'WelcomeController@index');
-
-//Route::get('home', 'HomeController@index');
 
 Route::get('/', function(){
 	return redirect('back/weapons');
@@ -31,8 +28,6 @@ Route::group(['prefix' => 'back'], function()
 });
 
 Route::get('back', 'AdminController@index');
-
-
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
